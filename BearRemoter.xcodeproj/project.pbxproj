@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0446456A1B7F9BEB00F49296 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645691B7F9BEB00F49296 /* CFNetwork.framework */; };
+		0446456C1B7F9BF600F49296 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0446456B1B7F9BF600F49296 /* CoreFoundation.framework */; };
+		0446456E1B7F9C0000F49296 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0446456D1B7F9C0000F49296 /* CoreTelephony.framework */; };
+		044645701B7F9C1000F49296 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0446456F1B7F9C1000F49296 /* SystemConfiguration.framework */; };
+		044645721B7F9C1A00F49296 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645711B7F9C1A00F49296 /* CoreGraphics.framework */; };
+		044645741B7F9C2500F49296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645731B7F9C2500F49296 /* Foundation.framework */; };
+		044645761B7F9C2A00F49296 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645751B7F9C2A00F49296 /* UIKit.framework */; };
+		044645781B7F9C3600F49296 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645771B7F9C3600F49296 /* libz.dylib */; };
+		0446457A1B7F9C4000F49296 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645791B7F9C4000F49296 /* Security.framework */; };
+		0446457D1B7F9CFF00F49296 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0446457C1B7F9CFF00F49296 /* PushConfig.plist */; };
+		044645871B7FB9E900F49296 /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645861B7FB9E900F49296 /* libPushSDK-1.8.5.a */; };
+		044645891B7FC5E400F49296 /* BearRemoterUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044645881B7FC5E400F49296 /* BearRemoterUserInfo.swift */; };
 		04DE73441B7F6F3E006AA912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73431B7F6F3E006AA912 /* AppDelegate.swift */; };
-		04DE73461B7F6F3E006AA912 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73451B7F6F3E006AA912 /* FirstViewController.swift */; };
-		04DE73481B7F6F3E006AA912 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73471B7F6F3E006AA912 /* SecondViewController.swift */; };
+		04DE73461B7F6F3E006AA912 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73451B7F6F3E006AA912 /* RemoteViewController.swift */; };
+		04DE73481B7F6F3E006AA912 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73471B7F6F3E006AA912 /* AboutViewController.swift */; };
 		04DE734B1B7F6F3E006AA912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DE73491B7F6F3E006AA912 /* Main.storyboard */; };
 		04DE734D1B7F6F3E006AA912 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DE734C1B7F6F3E006AA912 /* Images.xcassets */; };
 		04DE73501B7F6F3E006AA912 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DE734E1B7F6F3E006AA912 /* LaunchScreen.xib */; };
@@ -27,17 +39,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044645691B7F9BEB00F49296 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0446456B1B7F9BF600F49296 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0446456D1B7F9C0000F49296 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0446456F1B7F9C1000F49296 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		044645711B7F9C1A00F49296 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		044645731B7F9C2500F49296 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		044645751B7F9C2A00F49296 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		044645771B7F9C3600F49296 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		044645791B7F9C4000F49296 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0446457C1B7F9CFF00F49296 /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
+		0446457E1B7FB5C500F49296 /* BearRemoter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BearRemoter-Bridging-Header.h"; sourceTree = "<group>"; };
+		044645821B7FB7C300F49296 /* APService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
+		044645861B7FB9E900F49296 /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
+		044645881B7FC5E400F49296 /* BearRemoterUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearRemoterUserInfo.swift; sourceTree = "<group>"; };
 		04DE733E1B7F6F3E006AA912 /* BearRemoter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearRemoter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DE73421B7F6F3E006AA912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DE73431B7F6F3E006AA912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04DE73451B7F6F3E006AA912 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		04DE73471B7F6F3E006AA912 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		04DE73451B7F6F3E006AA912 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
+		04DE73471B7F6F3E006AA912 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		04DE734A1B7F6F3E006AA912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04DE734C1B7F6F3E006AA912 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04DE734F1B7F6F3E006AA912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04DE73551B7F6F3E006AA912 /* BearRemoterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearRemoterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DE735A1B7F6F3E006AA912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DE735B1B7F6F3E006AA912 /* BearRemoterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRemoterTests.swift; sourceTree = "<group>"; };
+		04DE73651B7F6FAC006AA912 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		04DE73661B7F6FAC006AA912 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +73,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0446457A1B7F9C4000F49296 /* Security.framework in Frameworks */,
+				044645781B7F9C3600F49296 /* libz.dylib in Frameworks */,
+				044645761B7F9C2A00F49296 /* UIKit.framework in Frameworks */,
+				044645871B7FB9E900F49296 /* libPushSDK-1.8.5.a in Frameworks */,
+				044645741B7F9C2500F49296 /* Foundation.framework in Frameworks */,
+				044645721B7F9C1A00F49296 /* CoreGraphics.framework in Frameworks */,
+				044645701B7F9C1000F49296 /* SystemConfiguration.framework in Frameworks */,
+				0446456E1B7F9C0000F49296 /* CoreTelephony.framework in Frameworks */,
+				0446456C1B7F9BF600F49296 /* CoreFoundation.framework in Frameworks */,
+				0446456A1B7F9BEB00F49296 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +96,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0446457B1B7F9C4600F49296 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				044645791B7F9C4000F49296 /* Security.framework */,
+				044645771B7F9C3600F49296 /* libz.dylib */,
+				044645751B7F9C2A00F49296 /* UIKit.framework */,
+				044645731B7F9C2500F49296 /* Foundation.framework */,
+				044645711B7F9C1A00F49296 /* CoreGraphics.framework */,
+				0446456F1B7F9C1000F49296 /* SystemConfiguration.framework */,
+				0446456D1B7F9C0000F49296 /* CoreTelephony.framework */,
+				0446456B1B7F9BF600F49296 /* CoreFoundation.framework */,
+				044645691B7F9BEB00F49296 /* CFNetwork.framework */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		04DE73351B7F6F3E006AA912 = {
 			isa = PBXGroup;
 			children = (
+				0446457B1B7F9C4600F49296 /* Lib */,
 				04DE73401B7F6F3E006AA912 /* BearRemoter */,
 				04DE73581B7F6F3E006AA912 /* BearRemoterTests */,
 				04DE733F1B7F6F3E006AA912 /* Products */,
@@ -79,13 +134,18 @@
 		04DE73401B7F6F3E006AA912 /* BearRemoter */ = {
 			isa = PBXGroup;
 			children = (
+				044645861B7FB9E900F49296 /* libPushSDK-1.8.5.a */,
+				044645821B7FB7C300F49296 /* APService.h */,
 				04DE73431B7F6F3E006AA912 /* AppDelegate.swift */,
-				04DE73451B7F6F3E006AA912 /* FirstViewController.swift */,
-				04DE73471B7F6F3E006AA912 /* SecondViewController.swift */,
+				04DE73451B7F6F3E006AA912 /* RemoteViewController.swift */,
+				04DE73471B7F6F3E006AA912 /* AboutViewController.swift */,
 				04DE73491B7F6F3E006AA912 /* Main.storyboard */,
 				04DE734C1B7F6F3E006AA912 /* Images.xcassets */,
 				04DE734E1B7F6F3E006AA912 /* LaunchScreen.xib */,
 				04DE73411B7F6F3E006AA912 /* Supporting Files */,
+				0446457C1B7F9CFF00F49296 /* PushConfig.plist */,
+				0446457E1B7FB5C500F49296 /* BearRemoter-Bridging-Header.h */,
+				044645881B7FC5E400F49296 /* BearRemoterUserInfo.swift */,
 			);
 			path = BearRemoter;
 			sourceTree = "<group>";
@@ -164,6 +224,7 @@
 				TargetAttributes = {
 					04DE733D1B7F6F3E006AA912 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = YAC3HYZC66;
 					};
 					04DE73541B7F6F3E006AA912 = {
 						CreatedOnToolsVersion = 6.4;
@@ -176,7 +237,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 04DE73351B7F6F3E006AA912;
@@ -195,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0446457D1B7F9CFF00F49296 /* PushConfig.plist in Resources */,
 				04DE734B1B7F6F3E006AA912 /* Main.storyboard in Resources */,
 				04DE73501B7F6F3E006AA912 /* LaunchScreen.xib in Resources */,
 				04DE734D1B7F6F3E006AA912 /* Images.xcassets in Resources */,
@@ -215,9 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DE73481B7F6F3E006AA912 /* SecondViewController.swift in Sources */,
+				04DE73481B7F6F3E006AA912 /* AboutViewController.swift in Sources */,
 				04DE73441B7F6F3E006AA912 /* AppDelegate.swift in Sources */,
-				04DE73461B7F6F3E006AA912 /* FirstViewController.swift in Sources */,
+				04DE73461B7F6F3E006AA912 /* RemoteViewController.swift in Sources */,
+				044645891B7FC5E400F49296 /* BearRemoterUserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +306,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04DE734A1B7F6F3E006AA912 /* Base */,
+				04DE73651B7F6FAC006AA912 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -252,6 +315,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04DE734F1B7F6F3E006AA912 /* Base */,
+				04DE73661B7F6FAC006AA912 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -295,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -344,9 +408,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BearRemoter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BearRemoter",
+					"$(PROJECT_DIR)/BearRemoter/jpush",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BearRemoter/BearRemoter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/BearRemoter";
 			};
 			name = Debug;
 		};
@@ -354,9 +430,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BearRemoter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BearRemoter",
+					"$(PROJECT_DIR)/BearRemoter/jpush",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BearRemoter/BearRemoter-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/BearRemoter";
 			};
 			name = Release;
 		};
@@ -413,6 +500,7 @@
 				04DE73611B7F6F3E006AA912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DE73621B7F6F3E006AA912 /* Build configuration list for PBXNativeTarget "BearRemoterTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +509,7 @@
 				04DE73641B7F6F3E006AA912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
