@@ -74,13 +74,13 @@ class BearSettingViewController: UITableViewController, UITableViewDelegate, UIT
         }
         
         var inputTextField: UITextField?
-        var alert = UIAlertController(title: "修改", message: "修改" + labelText, preferredStyle: UIAlertControllerStyle.Alert)
+        var alert = UIAlertController(title: "请输入", message: "修改" + labelText, preferredStyle: UIAlertControllerStyle.Alert)
 
         alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
-            textField.placeholder = result
+            textField.text = result
             inputTextField = textField
         })
-        alert.addAction(UIAlertAction(title: "确认", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "确认并保存", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
             let x:String = (inputTextField?.text)!
             userInfo?.setValue(x, forKey: target!)
             BearCache.sharedInstance.saveData()
@@ -88,15 +88,12 @@ class BearSettingViewController: UITableViewController, UITableViewDelegate, UIT
             cell?.detailTextLabel?.text = x
             
             if (target == "cellPhone") {
-                APService.setAlias(x, callbackSelector: nil, object: nil)
+                APService.setAlias("dev_" + x, callbackSelector: nil, object: nil)
             }
         }))
         alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
         
-//        let alert = UIAlertView(title: "修改", message: "修改" + labelText, delegate: nil, cancelButtonTitle: nil)
-//        alert.alertViewStyle = UIAlertViewStyle.PlainTextInput
-//        alert.show()
 
     }
     

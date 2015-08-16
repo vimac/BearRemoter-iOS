@@ -29,6 +29,36 @@ class BearRemoterViewController: UITableViewController, UITableViewDelegate, UIT
         var row = indexPath.row as Int
         var content = tableData[row] as String
         NSLog("pressed %@", content)
+        
+        let userInfo = BearCache.sharedInstance.userInfo
+        
+        var alert = UIAlertController(title: "将要发送", message: content, preferredStyle: UIAlertControllerStyle.Alert)
+
+        alert.addAction(UIAlertAction(title: "确认", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
+            let urlPath: String = "http://vifix.cn/remoter/send.php"
+            var url: NSURL = NSURL(string: urlPath)!
+            var req: NSMutableURLRequest = NSMutableURLRequest(URL: url)
+            
+            req.HTTPMethod = "POST"
+            var stringPost = "cellPhone=\(userInfo?.cellPhone as String!)&nickname=\(userInfo?.nickname as String!)&targetCellPhone=\(userInfo?.targetCellPhone as String!)&message=\(content)"
+            
+            let data = stringPost.dataUsingEncoding(NSUTF8StringEncoding)
+            
+            req.timeoutInterval = 60
+            req.HTTPBody = data
+            req.HTTPShouldHandleCookies = false
+            
+            let queue:NSOperationQueue = NSOperationQueue()
+            
+            NSURLConnection.sendAsynchronousRequest(req, queue: queue, completionHandler:{ (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
+                var err: NSError
+                //var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
+                //println("AsSynchronous\(jsonResult)")
+                //            println(NSString(data: <#NSData#>, encoding: <#UInt#>))
+            })
+        }))
+        alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
