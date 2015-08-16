@@ -18,10 +18,12 @@
 		0446457A1B7F9C4000F49296 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645791B7F9C4000F49296 /* Security.framework */; };
 		0446457D1B7F9CFF00F49296 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0446457C1B7F9CFF00F49296 /* PushConfig.plist */; };
 		044645871B7FB9E900F49296 /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044645861B7FB9E900F49296 /* libPushSDK-1.8.5.a */; };
-		044645891B7FC5E400F49296 /* BearRemoterUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044645881B7FC5E400F49296 /* BearRemoterUserInfo.swift */; };
+		044645891B7FC5E400F49296 /* BearUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044645881B7FC5E400F49296 /* BearUserInfo.swift */; };
+		045FFE521B804D2200F7144B /* BearCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FFE511B804D2200F7144B /* BearCache.swift */; };
+		045FFE541B8050FA00F7144B /* BearSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FFE531B8050FA00F7144B /* BearSettingViewController.swift */; };
 		04DE73441B7F6F3E006AA912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73431B7F6F3E006AA912 /* AppDelegate.swift */; };
-		04DE73461B7F6F3E006AA912 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73451B7F6F3E006AA912 /* RemoteViewController.swift */; };
-		04DE73481B7F6F3E006AA912 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73471B7F6F3E006AA912 /* AboutViewController.swift */; };
+		04DE73461B7F6F3E006AA912 /* BearRemoterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73451B7F6F3E006AA912 /* BearRemoterViewController.swift */; };
+		04DE73481B7F6F3E006AA912 /* BearAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE73471B7F6F3E006AA912 /* BearAboutViewController.swift */; };
 		04DE734B1B7F6F3E006AA912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DE73491B7F6F3E006AA912 /* Main.storyboard */; };
 		04DE734D1B7F6F3E006AA912 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DE734C1B7F6F3E006AA912 /* Images.xcassets */; };
 		04DE73501B7F6F3E006AA912 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DE734E1B7F6F3E006AA912 /* LaunchScreen.xib */; };
@@ -52,12 +54,14 @@
 		0446457E1B7FB5C500F49296 /* BearRemoter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BearRemoter-Bridging-Header.h"; sourceTree = "<group>"; };
 		044645821B7FB7C300F49296 /* APService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
 		044645861B7FB9E900F49296 /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
-		044645881B7FC5E400F49296 /* BearRemoterUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearRemoterUserInfo.swift; sourceTree = "<group>"; };
+		044645881B7FC5E400F49296 /* BearUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearUserInfo.swift; sourceTree = "<group>"; };
+		045FFE511B804D2200F7144B /* BearCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCache.swift; sourceTree = "<group>"; };
+		045FFE531B8050FA00F7144B /* BearSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearSettingViewController.swift; sourceTree = "<group>"; };
 		04DE733E1B7F6F3E006AA912 /* BearRemoter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearRemoter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DE73421B7F6F3E006AA912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DE73431B7F6F3E006AA912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04DE73451B7F6F3E006AA912 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
-		04DE73471B7F6F3E006AA912 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		04DE73451B7F6F3E006AA912 /* BearRemoterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRemoterViewController.swift; sourceTree = "<group>"; };
+		04DE73471B7F6F3E006AA912 /* BearAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearAboutViewController.swift; sourceTree = "<group>"; };
 		04DE734A1B7F6F3E006AA912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04DE734C1B7F6F3E006AA912 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04DE734F1B7F6F3E006AA912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -137,15 +141,17 @@
 				044645861B7FB9E900F49296 /* libPushSDK-1.8.5.a */,
 				044645821B7FB7C300F49296 /* APService.h */,
 				04DE73431B7F6F3E006AA912 /* AppDelegate.swift */,
-				04DE73451B7F6F3E006AA912 /* RemoteViewController.swift */,
-				04DE73471B7F6F3E006AA912 /* AboutViewController.swift */,
+				04DE73451B7F6F3E006AA912 /* BearRemoterViewController.swift */,
+				04DE73471B7F6F3E006AA912 /* BearAboutViewController.swift */,
 				04DE73491B7F6F3E006AA912 /* Main.storyboard */,
 				04DE734C1B7F6F3E006AA912 /* Images.xcassets */,
 				04DE734E1B7F6F3E006AA912 /* LaunchScreen.xib */,
 				04DE73411B7F6F3E006AA912 /* Supporting Files */,
 				0446457C1B7F9CFF00F49296 /* PushConfig.plist */,
 				0446457E1B7FB5C500F49296 /* BearRemoter-Bridging-Header.h */,
-				044645881B7FC5E400F49296 /* BearRemoterUserInfo.swift */,
+				044645881B7FC5E400F49296 /* BearUserInfo.swift */,
+				045FFE511B804D2200F7144B /* BearCache.swift */,
+				045FFE531B8050FA00F7144B /* BearSettingViewController.swift */,
 			);
 			path = BearRemoter;
 			sourceTree = "<group>";
@@ -276,10 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DE73481B7F6F3E006AA912 /* AboutViewController.swift in Sources */,
+				04DE73481B7F6F3E006AA912 /* BearAboutViewController.swift in Sources */,
 				04DE73441B7F6F3E006AA912 /* AppDelegate.swift in Sources */,
-				04DE73461B7F6F3E006AA912 /* RemoteViewController.swift in Sources */,
-				044645891B7FC5E400F49296 /* BearRemoterUserInfo.swift in Sources */,
+				045FFE521B804D2200F7144B /* BearCache.swift in Sources */,
+				045FFE541B8050FA00F7144B /* BearSettingViewController.swift in Sources */,
+				04DE73461B7F6F3E006AA912 /* BearRemoterViewController.swift in Sources */,
+				044645891B7FC5E400F49296 /* BearUserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +426,7 @@
 					"$(PROJECT_DIR)/BearRemoter",
 					"$(PROJECT_DIR)/BearRemoter/jpush",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BearRemoter/BearRemoter-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -440,7 +448,7 @@
 					"$(PROJECT_DIR)/BearRemoter",
 					"$(PROJECT_DIR)/BearRemoter/jpush",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BearRemoter/BearRemoter-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/BearRemoter";
