@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BearSettingViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+class BearSettingViewController: UITableViewController {
 
     let tableData: [String] = ["手机号", "昵称", "对方手机号"]
     
@@ -26,7 +26,7 @@ class BearSettingViewController: UITableViewController, UITableViewDelegate, UIT
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "cellSettings")
         }
-        var row = indexPath.row as Int
+        let row = indexPath.row as Int
         let labelText = tableData[row] as String
         cell!.textLabel?.text = labelText
         let userInfo = BearCache.sharedInstance.userInfo
@@ -49,7 +49,7 @@ class BearSettingViewController: UITableViewController, UITableViewDelegate, UIT
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var row = indexPath.row as Int
+        let row = indexPath.row as Int
         let labelText = tableData[row] as String
         var result:String?
         let target:String?
@@ -74,13 +74,13 @@ class BearSettingViewController: UITableViewController, UITableViewDelegate, UIT
         }
         
         var inputTextField: UITextField?
-        var alert = UIAlertController(title: "请输入", message: "修改" + labelText, preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "请输入", message: "修改" + labelText, preferredStyle: UIAlertControllerStyle.Alert)
 
-        alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+        alert.addTextFieldWithConfigurationHandler({(textField: UITextField) in
             textField.text = result
             inputTextField = textField
         })
-        alert.addAction(UIAlertAction(title: "确认并保存", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "确认并保存", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction) in
             let x:String = (inputTextField?.text)!
             userInfo?.setValue(x, forKey: target!)
             BearCache.sharedInstance.saveData()

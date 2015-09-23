@@ -15,9 +15,9 @@ class BearCache: NSObject {
     
     //获取沙盒文件夹路径
     func documentsDirectory()->String {
-        var paths = NSSearchPathForDirectoriesInDomains(
+        let paths = NSSearchPathForDirectoriesInDomains(
             NSSearchPathDirectory.DocumentationDirectory,NSSearchPathDomainMask.UserDomainMask,true)
-        var documentsDirectory:String = paths.first as! String
+        let documentsDirectory:String = paths.first as! String!
         return documentsDirectory
     }
     
@@ -27,8 +27,8 @@ class BearCache: NSObject {
     }
     
     func saveData() {
-        var data = NSMutableData()
-        var archive = NSKeyedArchiver(forWritingWithMutableData: data)
+        let data = NSMutableData()
+        let archive = NSKeyedArchiver(forWritingWithMutableData: data)
         archive.encodeObject(userInfo, forKey: "userInfo")
         archive.finishEncoding()
         data.writeToFile(dataFilePath(), atomically: true)

@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.applicationIconBadgeNumber = 0
         APService.setBadge(0)
         
-        var alert = UIAlertController(title: "来自\(from)的指令", message: content, preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "来自\(from)的指令", message: content, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "确认", style: UIAlertActionStyle.Default, handler: nil))
         
         self.window!.rootViewController!.presentViewController(alert, animated: true, completion: nil)
